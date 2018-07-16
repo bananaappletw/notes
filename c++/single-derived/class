@@ -1,0 +1,28 @@
+Vtable for Parent
+Parent::_ZTV6Parent: 4u entries
+0     (int (*)(...))0
+8     (int (*)(...))(& _ZTI6Parent)
+16    (int (*)(...))Parent::Foo
+24    (int (*)(...))Parent::FooNotOverridden
+
+Class Parent
+   size=8 align=8
+   base size=8 base align=8
+Parent (0x0x7f083db845a0) 0 nearly-empty
+    vptr=((& Parent::_ZTV6Parent) + 16u)
+
+Vtable for Derived
+Derived::_ZTV7Derived: 4u entries
+0     (int (*)(...))0
+8     (int (*)(...))(& _ZTI7Derived)
+16    (int (*)(...))Derived::Foo
+24    (int (*)(...))Parent::FooNotOverridden
+
+Class Derived
+   size=8 align=8
+   base size=8 base align=8
+Derived (0x0x7f083da2f340) 0 nearly-empty
+    vptr=((& Derived::_ZTV7Derived) + 16u)
+  Parent (0x0x7f083db84600) 0 nearly-empty
+      primary-for Derived (0x0x7f083da2f340)
+
